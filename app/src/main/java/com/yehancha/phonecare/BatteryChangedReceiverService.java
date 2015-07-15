@@ -10,11 +10,13 @@ import android.widget.Toast;
 
 public class BatteryChangedReceiverService extends Service {
     private ChargingNotifier chargingNotifier;
+    private BatteryResetManager batteryResetManager;
 
     private BroadcastReceiver batteryBroadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             chargingNotifier.onBatteryChange(intent);
+            batteryResetManager.onBatteryChange(intent);
         }
     };
 
@@ -23,6 +25,7 @@ public class BatteryChangedReceiverService extends Service {
         super.onCreate();
 
         chargingNotifier = new ChargingNotifier(this);
+        batteryResetManager = new BatteryResetManager(this);
 
         IntentFilter intentFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
         registerReceiver(batteryBroadcastReceiver, intentFilter);
