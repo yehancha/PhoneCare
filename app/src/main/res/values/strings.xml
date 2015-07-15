@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PhoneCare</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="battery_percent">Available Capacity:</string>
+    <string name="def_battery_percent">--%</string>
+    <string name="battery_status">Status</string>
+    <string name="def_battery_status">--</string>
+    <string name="battery_action">Action to take:</string>
+    <string name="def_battery_action">Everything is fine. Enjoy!</string>
+
+    <string name="battery_charging">Battery is charging.</string>
+    <string name="battery_discharging">Battery is discharging.</string>
+    <string name="plugin_phone">It\'s time to plug-in the phone!</string>
+    <string name="unplug_phone">It\'s time to unplug the phone!</string>
+
+    <string name="title_plugin_phone">Plug-in</string>
+    <string name="title_unplug_phone">Unplug</string>
+</resources>
