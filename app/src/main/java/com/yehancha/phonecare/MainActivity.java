@@ -1,4 +1,4 @@
-package com.myvission.yehancha.phonecare;
+package com.yehancha.phonecare;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.myvission.yehancha.phonecare.R;
 
 
 public class MainActivity extends AppCompatActivity {

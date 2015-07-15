@@ -1,18 +1,11 @@
-package com.myvission.yehancha.phonecare;
+package com.yehancha.phonecare;
 
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.Service;
-import android.app.TaskStackBuilder;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.media.RingtoneManager;
-import android.net.Uri;
-import android.os.BatteryManager;
 import android.os.IBinder;
-import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
 
 public class BatteryChangedReceiverService extends Service {

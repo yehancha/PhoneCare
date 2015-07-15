@@ -1,4 +1,4 @@
-package com.myvission.yehancha.phonecare;
+package com.yehancha.phonecare;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -9,6 +9,8 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.BatteryManager;
 import android.support.v4.app.NotificationCompat;
+
+import com.myvission.yehancha.phonecare.R;
 
 /**
  * Created by yehancha on 2015-07-15.

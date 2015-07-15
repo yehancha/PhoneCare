@@ -1,4 +1,4 @@
-package com.myvission.yehancha.phonecare;
+package com.yehancha.phonecare;
 
 /**
  * Created by yehancha on 2015-07-14.

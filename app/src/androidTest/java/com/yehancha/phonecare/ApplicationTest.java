@@ -1,4 +1,4 @@
-package com.myvission.yehancha.phonecare;
+package com.yehancha.phonecare;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
