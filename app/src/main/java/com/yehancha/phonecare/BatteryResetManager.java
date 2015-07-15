@@ -54,7 +54,7 @@ public class BatteryResetManager {
         float batteryCapacity = Math.round(batteryLevel / (float) batteryScale * 100);
 
         int batteryStatus = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
-        boolean isBatteryCharging = batteryStatus == BatteryManager.BATTERY_STATUS_CHARGING;
+        boolean batteryCharging = batteryStatus == BatteryManager.BATTERY_STATUS_CHARGING;
 
         int newPhase = currentPhase;
         boolean resetCompleted = false;
@@ -63,7 +63,7 @@ public class BatteryResetManager {
             newPhase = PHASE_ONE;
             Toast.makeText(context, "Entering Phase#1...", Toast.LENGTH_SHORT).show();
         } else if (currentPhase == PHASE_ONE) {
-            if (isBatteryCharging) {
+            if (batteryCharging) {
                 // Charging intervened Phase#1
                 newPhase = PHASE_NO_POSSIBLE_RESET;
                 Toast.makeText(context, "Battery is charging in Phase#1. Procedure terminating...", Toast.LENGTH_SHORT).show();
