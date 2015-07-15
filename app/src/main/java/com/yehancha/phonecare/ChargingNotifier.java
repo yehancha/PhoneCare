@@ -28,14 +28,14 @@ public class ChargingNotifier {
         int batteryLevel = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
         int batteryScale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
 
-        float batteryPercent = Math.round(batteryLevel / (float) batteryScale * 100);
+        float batteryCapacity = Math.round(batteryLevel / (float) batteryScale * 100);
 
         int batteryStatus = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
         boolean isBatteryCharging = batteryStatus == BatteryManager.BATTERY_STATUS_CHARGING;
 
-        if (batteryPercent <= Constants.BATTERY_CAPASITY_PLUG_IN && !isBatteryCharging) {
+        if (batteryCapacity <= Constants.BATTERY_CAPASITY_PLUG_IN && !isBatteryCharging) {
             notifyPlugIn();
-        } else if (batteryPercent >= Constants.BATTERY_CAPASITY_UNPLUG && isBatteryCharging) {
+        } else if (batteryCapacity >= Constants.BATTERY_CAPASITY_UNPLUG && isBatteryCharging) {
             notifyUnplug();
         } else {
             cancelNotification();
