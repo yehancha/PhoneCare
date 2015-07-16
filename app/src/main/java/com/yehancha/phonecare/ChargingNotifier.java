@@ -16,8 +16,6 @@ import com.myvission.yehancha.phonecare.R;
  * Created by yehancha on 2015-07-15.
  */
 public class ChargingNotifier {
-    private static final int NOTIFICATION_ID = 100;
-
     private Context context;
 
     public ChargingNotifier(Context context) {
@@ -72,12 +70,12 @@ public class ChargingNotifier {
         notificationBuilder.setContentIntent(resultPendingIntent);
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(NOTIFICATION_ID, notificationBuilder.build());
+        notificationManager.notify(Constants.NOTIFICATION_ID_BATTTERY_CHARGING, notificationBuilder.build());
     }
 
     private void cancelNotification() {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.cancel(NOTIFICATION_ID);
+        notificationManager.cancel(Constants.NOTIFICATION_ID_BATTTERY_CHARGING);
     }
 
 }

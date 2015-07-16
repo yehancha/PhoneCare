@@ -22,6 +22,11 @@
             android:enabled="true"
             android:exported="false" >
         </service>
+        <service
+            android:name="com.yehancha.phonecare.RestartNotifierService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
     </application>
 
 </manifest>

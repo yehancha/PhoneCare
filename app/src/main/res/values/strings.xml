@@ -15,7 +15,9 @@
     <string name="battery_discharging">Battery is discharging.</string>
     <string name="plugin_phone">It\'s time to plug-in the phone!</string>
     <string name="unplug_phone">It\'s time to unplug the phone!</string>
+    <string name="restart_phone">Better to restart now!</string>
 
     <string name="title_plugin_phone">Plug-in</string>
     <string name="title_unplug_phone">Unplug</string>
+    <string name="title_restart_phone">Restart</string>
 </resources>
