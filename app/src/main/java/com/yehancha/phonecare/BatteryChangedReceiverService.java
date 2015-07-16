@@ -33,6 +33,7 @@ public class BatteryChangedReceiverService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        BootCompletedBroadcastReceiver.completeWakefulIntent(intent);
         return START_STICKY;    // we don't have an intent to deliver
     }
 
