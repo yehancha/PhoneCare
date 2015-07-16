@@ -10,8 +10,6 @@ import android.net.Uri;
 import android.os.BatteryManager;
 import android.support.v4.app.NotificationCompat;
 
-import com.yehancha.phonecare.R;
-
 /**
  * Created by yehancha on 2015-07-15.
  */
