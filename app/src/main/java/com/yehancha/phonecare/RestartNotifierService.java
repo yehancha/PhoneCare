@@ -12,7 +12,7 @@ import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
 
-import com.myvission.yehancha.phonecare.R;
+import com.yehancha.phonecare.R;
 
 public class RestartNotifierService extends Service {
 

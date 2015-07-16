@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.myvission.yehancha.phonecare.R;
+import com.yehancha.phonecare.R;
 
 
 public class MainActivity extends AppCompatActivity {
