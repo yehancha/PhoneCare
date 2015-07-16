@@ -33,8 +33,6 @@ public class BatteryChangedReceiverService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Toast.makeText(this, "BatteryNotifiationService starting", Toast.LENGTH_SHORT).show();
-
         return START_STICKY;    // we don't have an intent to deliver
     }
 
