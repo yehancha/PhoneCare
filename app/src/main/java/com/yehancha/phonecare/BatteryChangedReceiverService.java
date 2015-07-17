@@ -32,7 +32,10 @@ public class BatteryChangedReceiverService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        BootCompletedBroadcastReceiver.completeWakefulIntent(intent);
+        if (intent != null) {
+            // Intent will be null if this is a restart by the OS
+            BootCompletedBroadcastReceiver.completeWakefulIntent(intent);
+        }
         return START_STICKY;    // we don't have an intent to deliver
     }
 
